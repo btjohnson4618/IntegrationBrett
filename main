@@ -1,0 +1,195 @@
+
+import java.util.Scanner;
+
+
+public class Main {
+	
+	
+	//NAME: Brett Johnson
+	
+	
+	//A class is code
+	/**
+	 * Brett Johnson
+	 * @param args
+	 * @param Parameter 
+	 */
+	public static void main(String[] args) {
+		
+
+	demonstrateDivision();	
+	demonstrateAddition();  
+	demonstrateSubtraction();  
+	demonstrateMultiplication();
+	demonstrateRemainder();	
+	demonstrateSayHello();   
+	defineByte();
+	defineShort();
+	defineInt();
+	defineLong();
+	defineFloat();
+	defineDouble();
+	defineBoolean();
+	defineChar();
+	demonstrateLowerCase();
+	demonstrateSplit();
+	demonstrateTrim();
+	demonstrateCasting();
+	}
+	
+	
+
+
+	public static void demonstrateDivision() { //method
+		
+		//the definition of a variable is a container that holds values. must be declared to be used as a data type.
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter a number to be divided by 2:");
+		int num1 = scan.nextInt();
+	    int num2 = 2;
+		double result1 = (double)num1 / num2;
+        System.out.println(result1); 
+        
+        scan.close();
+        
+        //integer division will divide the numbers but will not show a decimal place. Will not show remainder.
+        //since I made it a double division, it will show the decimal place as well.
+	}
+	
+	public static void demonstrateAddition() {  //method
+		double num3 = 4.6;
+	    double num4 = 2.2;
+		double result2 = num3 + num4;  //adding two doubles
+        System.out.println(result2 + "is the sum of 4.6 and 2.2");
+	}
+	
+	public static void demonstrateSubtraction() {  //method
+		int num5 = 4;
+	    int num6 = 2;
+		int result3 = (num5 - num6); //Argument
+        System.out.println(result3 + "is the difference between 4 and 2");
+	}
+	
+	public static void demonstrateMultiplication() {  //method
+		int num5 = 4;
+	    int num6 = 2;
+		int result3 = (num5 * num6); //Argument
+        System.out.println(result3 + "is the product of 4 and 2");
+	}
+	
+	public static void demonstrateRemainder() {  //method
+		double num5 = 5.0;
+	    double num6 = 2.0;
+		double result3 = (num5 % num6); //Argument
+        System.out.println(result3 + "is the reaminder of 5 and 3.");
+	}
+	
+	
+	public static void demonstrateSayHello() {
+		System.out.println("Hello World!"); 
+			
+	}
+	
+	
+	//defining a Byte
+	public static void defineByte(){
+		System.out.println("The defintion of a Byte is:");
+		System.out.println("The byte data type is an 8-bit " +
+				"signed two's compliment integer. it has a " +
+				"minimum value of -128 and a maximum value of 127. " +
+				"it can be put into an array to make the information useful.");
+				
+	}
+	
+	//defining a Short
+	public static void defineShort(){
+		System.out.println("The defintion of a Short is:");
+		System.out.println("The short data type is an 16-bit " +
+				"signed two's compliment integer. it has a " +
+				"minimum value of -32,768 and a maximum value of 32767. " +
+				"A short can also be put into an array.");
+				
+	}
+	
+	//defining a Integer
+	public static void defineInt(){    
+		System.out.println("The defintion of a Integer is:");
+		System.out.println("The int data type is an 32-bit " +
+				"signed two's compliment integer. it has a " +
+				"minimum value of -2^31 and a maximum value of 2^31 -1." +
+				"You can use an int to represent an unsigned 32-bit integer.");
+				
+	}
+	
+	//defining a Long
+	public static void defineLong(){
+		System.out.println("The defintion of a Long is:");
+		System.out.println("The long data type is an 64-bit " +
+				"two's compliment integer. it has a minimum value " +
+				"of -2^63 and a maximum value of 2^63 -1. " +
+				"A long can be used to represent an unsigned 64-bit long.");
+	}
+	
+	//defining a Float
+	public static void defineFloat(){
+		System.out.println("The defintion of a Float is:");
+		System.out.println("The float data type is a 32-bit IEEE 754 floating point " +
+				"It has a range beyond the scope of discussion. " +
+				"You can use a floats to save memory in large arrays. Should never be "
+				+ "used for precise values, such as currency. ");
+	}
+	
+	//defining a Double
+	public static void defineDouble(){
+		System.out.println("The defintion of a Double is:");
+		System.out.println("The double data type is a 64-bit IEEE 754 floating point. " +
+				" it has a maximum and minimum value beyong the scope of discussion" +
+				"You can use an double to represent decimal values but should not be used for currency.");
+	}
+	
+	//defining a Boolean
+	public static void defineBoolean(){
+		System.out.println("The defintion of a Boolean is:");
+		System.out.println("The boolean data type only has two possible values-- true and false. " +
+				"This is used to simply flag and track true/false conditions" +
+				"This data type represents one bit of informtastion but its size is not defined.");
+	}
+	
+	//defining a Char
+	public static void defineChar(){
+		System.out.println("The defintion of a Char is:");
+		System.out.println("The char data type is a 16-bit unicode " +
+				"minimum value of 0 and a maximum value of 65,535. ");
+	}
+	
+	public static void demonstrateLowerCase() {
+		String line1 = "THIS IS AN EXAMPLE OF TO LOWER CASE";
+		System.out.println(line1);
+		System.out.println(line1.toLowerCase());
+	}
+	
+	public static void demonstrateSplit() {
+		String line2 = "This is the String -I chose to use.";
+		String[] parts = line2.split("-"); //trimming around the -
+		System.out.println(parts[0]); //printing out part 1
+		System.out.println(parts[1]); //printing out part 2
+		
+	}
+	public static void demonstrateTrim() {
+		String line3 = "     I will trim this string     ";
+		System.out.println(line3.trim());
+		
+	}
+	public static void demonstrateCasting() {
+		int a = 10;
+		System.out.println(a);
+		double b = a;
+		System.out.println(b);
+		int c = (int) b;
+		System.out.println(c);
+		
+				
+		
+	}
+	
+}
